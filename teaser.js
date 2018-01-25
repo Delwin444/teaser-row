@@ -54,6 +54,13 @@ TeaserRow.prototype.registerTeaserElementsClickEvent = function () {
 };
 
 TeaserRow.prototype.onTeaserClick = function (event) {
+    /*
+     * Do nothing, if teaser is already opening
+     */
+    if (document.getElementById('teaser-overlay') !== null) {
+        return;
+    }
+
     /**
      * @type {Node}
      */
