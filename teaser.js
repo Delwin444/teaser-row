@@ -17,19 +17,6 @@ var TeaserRow = function (element) {
         return onEscapeDownFunction(event);
     };
 
-    // var teaserOverlayOnEscapeKeyDown = function (e) {
-    //     e = e || window.event;
-    //     var isEscape = false;
-    //     if ('key' in e) {
-    //         isEscape = (e.key === 'Escape' || e.key === 'Esc');
-    //     } else {
-    //         isEscape = (e.keyCode === 27);
-    //     }
-    //     if (isEscape) {
-    //         this.closeTeaser();
-    //     }
-    // }.bind(this);
-
     this.teaserRow = element;
     this.teaserList = this.teaserRow.getElementsByClassName('teaser');
 
